@@ -376,9 +376,9 @@ canvas, .text, .frame, .outline, img {
 }
 
 .tickerMain {
-  -webkit-transform: scale(0.558) translate(-27px, 272px) skew(-1deg, -5deg);
-  -ms-transform: scale(0.558) translate(-27px, 272px) skew(-1deg, -5deg);
-  transform: scale(0.558) translate(-27px, 272px) skew(-1deg, -5deg);
+  -webkit-transform: scale(0.5) translate(-31px, 331px) skew(-1deg, -5deg);
+  -ms-transform: scale(0.5) translate(-31px, 331px) skew(-1deg, -5deg);
+  transform: scale(0.5) translate(-31px, 331px) skew(-1deg, -5deg);
 }
 
 #legalBtn {
