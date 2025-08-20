@@ -1,0 +1,108 @@
+
+
+
+.cardWrapper{
+  position:absolute;
+  -webkit-font-smoothing:antialiased;
+  
+  .card{
+    .cardFace{
+      position:absolute;  
+      &.back img.num{
+        transform:  translate(0px, -8px);
+      }
+      &.front img.num{
+        transform:  translate(0px, 8px);
+      }
+    }
+  }
+
+
+
+}
+
+.phone{
+
+ -webkit-filter: drop-shadow(0px 0px 6px rgba(255, 255, 255, .5));
+ filter: drop-shadow(0px 0px 6px rgba(255, 255, 255, .5));
+}
+
+.cloud{
+  mix-blend-mode: screen;
+  // opacity:.8;
+}
+.cloud-blenmode{
+  mix-blend-mode: screen;
+  transform-origin: 50% 50%;
+}
+ 
+
+
+.cloud-gutar{
+  mix-blend-mode: lighten;  
+}
+
+.faker{
+  opacity:1 !important;
+  z-index: 0;
+
+  .a{
+    position: absolute;
+    top:0px;    
+  }
+  .end{
+    opacity:0;
+  }
+  .b{
+    position: absolute;
+    top:151px;
+    img.num{
+      transform:  translate(0px, -8px);
+    }
+  }
+}
+
+
+.frame1{
+  // opacity: 1;
+  
+}
+
+
+.tickerMain{
+
+
+  .ticker-item {
+    .rings{
+      transform:  translate(-8px, 0px);
+      z-index: 100;
+    }  
+  }
+  .ticker-item.ticker-ones{
+    transform:  translate(186px, 0px);
+
+  }
+  .ticker-item.ticker-tens{
+    transform:  translate(0px, 0px);
+
+  }
+  .card-shadow{
+    width: 171px;
+    height:151px;    
+    position: absolute;
+    opacity: .2;
+  }
+
+  .card-shadow.top{
+    top: 0px;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 15%, rgba(0,0,0,0) 100%);
+  }
+
+  .card-shadow.bottom{
+    top: 151px;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 15%, rgba(0,0,0,0) 100%);
+  }
+
+}

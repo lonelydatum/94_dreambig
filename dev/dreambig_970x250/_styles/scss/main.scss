@@ -1,0 +1,58 @@
+@import '../../../_common/styles/b970x250.scss';
+@import '../../../_common/styles/dreambig.scss';
+
+
+.frame3{
+	// opacity: 1;
+}
+
+
+
+.frame1 .cloud-blenmode{  	
+  @include pos-scale(365, 181, 1.3);
+} 
+
+.frame2 .cloud-blenmode{		
+  @include pos-scale(366, 70, .8);
+  opacity: .9;  
+}
+
+.frame3 .cloud-blenmode{    
+	
+    @include pos-scale(294, 161, .85);  
+}
+
+
+
+.frame1{
+	.dream_big_logo{
+		transform-origin: 0 0;
+		
+		@include pos-scale(-59, -35, .665);
+	}
+}
+
+.bar{
+	display: none;
+}
+
+
+
+
+.cloud{
+	// @include pos(-17, 0);
+
+}
+
+
+.tickerMain{	
+	
+	transform: scale(0.35) translate(306px, 34px) skew(0deg, -3deg);
+}
+
+#legalBtn{	
+	@include pos(910, 0);	
+	width: 60px;
+	// opacity: 1;
+	// display: block;
+}

@@ -1,0 +1,51 @@
+@import '../../../_common/styles/b160x600.scss';
+@import '../../../_common/styles/dreambig.scss';
+
+
+
+.frame1 .cloud-blenmode{  
+  @include pos-scale(-39, 306, .8);
+} 
+
+.frame2 .cloud-blenmode{
+  @include pos-scale(-29, 272, .8);
+  opacity: .9;  
+}
+
+.frame3 .dream_big.cloud-blenmode{    
+    @include pos-scale(-39, 188, .8);
+}
+
+
+
+
+.frame3{
+	// opacity: 1;
+}
+
+
+.frame3{
+	.dream_big{
+		@include pos-scale(0, -127, 1);
+	}
+}
+
+.cloud_gutar{
+	@include pos(-32, 0);
+
+}
+
+.cloud_bike{
+	@include pos(-28, 0);
+
+}
+
+
+.tickerMain{
+	transform: scale(0.345) translate(-99px, 598px) skew(2deg, -5deg);
+}
+
+#legalBtn{	
+	@include pos(100, 0);	
+	width: 60px;
+}

@@ -1,0 +1,404 @@
+/*--------------------------------------------*/
+/* reset */
+/*--------------------------------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+#legalBtn:hover ~ #legalContent {
+  opacity: 1;
+}
+
+#legalContent {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  -webkit-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  position: absolute;
+  color: white;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  padding: 10px;
+  font-size: 10px;
+  z-index: 900;
+  opacity: 0;
+  font-weight: normal;
+  line-height: 15px;
+  transition: opacity 0.3s;
+  pointer-events: none;
+}
+
+#legalBtn {
+  -webkit-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  position: absolute;
+  opacity: 0;
+  width: 36px;
+  height: 25px;
+  z-index: 11;
+  background-color: red;
+  display: none;
+}
+
+#olg {
+  opacity: 0;
+}
+
+#bluewedge2, #redwedge2 {
+  visibility: hidden;
+}
+
+#bluewedge1, #redwedge1 {
+  -webkit-transform-origin: 0% 100% !important;
+  -ms-transform-origin: 0% 100% !important;
+  transform-origin: 0% 100% !important;
+  -webkit-transform: translate(0px, 0px) scale(1, 0);
+  -ms-transform: translate(0px, 0px) scale(1, 0);
+  transform: translate(0px, 0px) scale(1, 0);
+}
+
+/*--------------------------------------------*/
+/* common */
+/*--------------------------------------------*/
+html, body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+#banner {
+  background-color: #4185d0;
+  width: 300px;
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+  -webkit-text-size-adjust: 100%;
+  opacity: 1;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateZ(0) scale(1, 1);
+  cursor: pointer;
+}
+
+#banner > a {
+  width: inherit;
+  height: inherit;
+}
+
+canvas, .text, .frame, .outline, img {
+  position: absolute;
+}
+
+.outline {
+  z-index: 99;
+  width: inherit;
+  height: inherit;
+  border: 1px solid black;
+  pointer-events: none;
+  position: absolute;
+}
+
+.frame {
+  width: inherit;
+  height: inherit;
+  opacity: 0;
+  top: 0;
+  overflow: hidden;
+  left: 0;
+}
+
+.shadow {
+  -webkit-filter: drop-shadow(3px 3px 8px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(3px 3px 8px rgba(0, 0, 0, 0.5));
+}
+
+.retina {
+  -webkit-transform: translate(0px, 0px) scale(0.5, 0.5);
+  -ms-transform: translate(0px, 0px) scale(0.5, 0.5);
+  transform: translate(0px, 0px) scale(0.5, 0.5);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  position: absolute;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+#banner {
+  width: 970px;
+  height: 250px;
+}
+
+#olg {
+  width: 158px;
+  height: 81px;
+  -webkit-transform: translate(-2px, 169px);
+  -ms-transform: translate(-2px, 169px);
+  transform: translate(-2px, 169px);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  position: absolute;
+}
+
+#legalBtn {
+  -webkit-transform: translate(820px, 185px);
+  -ms-transform: translate(820px, 185px);
+  transform: translate(820px, 185px);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  position: absolute;
+  width: 140px;
+  height: 50px;
+}
+
+.cardWrapper {
+  position: absolute;
+  -webkit-font-smoothing: antialiased;
+}
+
+.cardWrapper .card .cardFace {
+  position: absolute;
+}
+
+.cardWrapper .card .cardFace.back img.num {
+  -webkit-transform: translate(0px, -8px);
+  -ms-transform: translate(0px, -8px);
+  transform: translate(0px, -8px);
+}
+
+.cardWrapper .card .cardFace.front img.num {
+  -webkit-transform: translate(0px, 8px);
+  -ms-transform: translate(0px, 8px);
+  transform: translate(0px, 8px);
+}
+
+.phone {
+  -webkit-filter: drop-shadow(0px 0px 6px rgba(255, 255, 255, 0.5));
+  filter: drop-shadow(0px 0px 6px rgba(255, 255, 255, 0.5));
+}
+
+.cloud {
+  mix-blend-mode: screen;
+}
+
+.cloud-blenmode {
+  mix-blend-mode: screen;
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+
+.cloud-gutar {
+  mix-blend-mode: lighten;
+}
+
+.faker {
+  opacity: 1 !important;
+  z-index: 0;
+}
+
+.faker .a {
+  position: absolute;
+  top: 0px;
+}
+
+.faker .end {
+  opacity: 0;
+}
+
+.faker .b {
+  position: absolute;
+  top: 151px;
+}
+
+.faker .b img.num {
+  -webkit-transform: translate(0px, -8px);
+  -ms-transform: translate(0px, -8px);
+  transform: translate(0px, -8px);
+}
+
+.tickerMain .ticker-item .rings {
+  -webkit-transform: translate(-8px, 0px);
+  -ms-transform: translate(-8px, 0px);
+  transform: translate(-8px, 0px);
+  z-index: 100;
+}
+
+.tickerMain .ticker-item.ticker-ones {
+  -webkit-transform: translate(186px, 0px);
+  -ms-transform: translate(186px, 0px);
+  transform: translate(186px, 0px);
+}
+
+.tickerMain .ticker-item.ticker-tens {
+  -webkit-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+}
+
+.tickerMain .card-shadow {
+  width: 171px;
+  height: 151px;
+  position: absolute;
+  opacity: .2;
+}
+
+.tickerMain .card-shadow.top {
+  top: 0px;
+  background: black;
+  background: linear-gradient(0deg, black 0%, black 15%, transparent 100%);
+}
+
+.tickerMain .card-shadow.bottom {
+  top: 151px;
+  background: black;
+  background: linear-gradient(180deg, black 0%, black 15%, transparent 100%);
+}
+
+.frame1 .cloud-blenmode {
+  -webkit-transform: translate(365px, 181px) scale(1.3, 1.3);
+  -ms-transform: translate(365px, 181px) scale(1.3, 1.3);
+  transform: translate(365px, 181px) scale(1.3, 1.3);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  position: absolute;
+}
+
+.frame2 .cloud-blenmode {
+  -webkit-transform: translate(366px, 70px) scale(0.8, 0.8);
+  -ms-transform: translate(366px, 70px) scale(0.8, 0.8);
+  transform: translate(366px, 70px) scale(0.8, 0.8);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  position: absolute;
+  opacity: .9;
+}
+
+.frame3 .cloud-blenmode {
+  -webkit-transform: translate(294px, 161px) scale(0.85, 0.85);
+  -ms-transform: translate(294px, 161px) scale(0.85, 0.85);
+  transform: translate(294px, 161px) scale(0.85, 0.85);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  position: absolute;
+}
+
+.frame1 .dream_big_logo {
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: translate(-59px, -35px) scale(0.665, 0.665);
+  -ms-transform: translate(-59px, -35px) scale(0.665, 0.665);
+  transform: translate(-59px, -35px) scale(0.665, 0.665);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  position: absolute;
+}
+
+.bar {
+  display: none;
+}
+
+.tickerMain {
+  -webkit-transform: scale(0.35) translate(306px, 34px) skew(0deg, -3deg);
+  -ms-transform: scale(0.35) translate(306px, 34px) skew(0deg, -3deg);
+  transform: scale(0.35) translate(306px, 34px) skew(0deg, -3deg);
+}
+
+#legalBtn {
+  -webkit-transform: translate(910px, 0px);
+  -ms-transform: translate(910px, 0px);
+  transform: translate(910px, 0px);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  position: absolute;
+  width: 60px;
+}
+
+/*# sourceMappingURL=main.css.map */

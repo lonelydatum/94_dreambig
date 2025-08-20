@@ -1,0 +1,25 @@
+@import './common.scss';
+
+#banner{
+ width: 728px;
+ height: 90px; 
+}
+
+
+
+#olg{
+	
+	width: 117px;
+	height: 69px;
+	@include pos(-2, 26);
+	
+}
+
+
+
+
+#legalBtn{	
+	@include pos(650, 45);	
+	width: 80px;
+
+}

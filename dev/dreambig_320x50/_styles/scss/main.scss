@@ -1,0 +1,59 @@
+@import '../../../_common/styles/b320x50.scss';
+
+
+
+@import '../../../_common/styles/dreambig.scss';
+
+
+.frame2{
+	// opacity: 1;
+}
+
+
+.frame2 .cloud-blenmode{	
+	@include pos-scale(-50, 7, .27);  
+	opacity: .92;  
+}
+
+
+
+
+.t1, .t2{
+	transform-origin: 0 0;
+	@include pos-scale(0, 0, .5);
+}
+
+
+.frame1{
+	.dream_big{
+		transform-origin: 0 0;
+		@include pos-scale(021, 0, .5);
+	}
+}
+
+.bar{
+	display: none;
+}
+
+
+
+.cloud{
+	@include pos(-10, 0);
+	opacity: 1;
+}
+
+
+.tickerMain{		
+	transform: scale(0.12) translate(-747px, 69px) skew(0deg, -7deg);
+}
+
+#legalBtn{	
+	@include pos(250, 0);	
+	width: 60px;
+}
+
+#legalContent{
+	font-size: 7px;
+	padding: 4px;
+	line-height: 7px
+}

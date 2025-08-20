@@ -1,0 +1,29 @@
+@import './common.scss';
+
+#banner{
+ width: 300px;
+ height: 250px; 
+}
+
+
+
+#olg{
+	width: 108px;
+	height: 69px;
+	@include pos(0, 193);
+}
+
+
+
+#legalBtn{	
+	@include pos(240, 0);	
+	width: 60px;
+}
+
+.t1a{
+	// @include pos-scale(-130, 30, .5);
+}
+
+.t1b{
+	// @include pos-scale(130, -30, .5);
+}
