@@ -13,8 +13,9 @@
 } 
 
 .frame2 .cloud-blenmode{	
-  @include pos-scale(35, 45, .55);
-  opacity: .9;  
+  @include pos-scale(80, 40, .43);
+  z-index: 12;
+  
 }
 
 .frame3 .cloud-blenmode{    

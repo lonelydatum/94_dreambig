@@ -8,8 +8,8 @@
 } 
 
 .frame2 .cloud-blenmode{
-  @include pos-scale(-29, 272, .8);
-  opacity: .9;  
+  @include pos-scale(-46, 275, 1);
+  opacity: 1;  
 }
 
 .frame3 .dream_big.cloud-blenmode{    
@@ -42,7 +42,7 @@
 
 
 .tickerMain{
-	transform: scale(0.345) translate(-99px, 598px) skew(2deg, -5deg);
+	transform: scale(0.345) translate(-96px, 598px) skew(-1deg, -5deg);
 }
 
 #legalBtn{	

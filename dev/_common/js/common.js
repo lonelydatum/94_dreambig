@@ -71,17 +71,20 @@ function start(){
 	});
 	
 	tl.set([".frame0", ".frame1"], {opacity:1})
+	tl.from(".bg_1", {duration:.1, opacity:0}, 0)
 	tl.add("f1", "+=.3")
 	
 	tl.from(".frame1 .dream_big", {y:bannerSize.h, ease:"back.out", duration:.5}, "f1")
 	tl.from(".cloud_palm", {x:-100, opacity:0, ease:"power2.out",  duration:.4}, "f1")
 
 
+
 	tl.add("f2", `+=${READ.f1}`)
 	tl.set(".frame2", {opacity:1})
-	if(universalBanner.size==="320x50" || universalBanner.size==="970x250"){
-		tl.to(".sky_palm", { opacity:0, duration:.4}, "f2")	
-	}
+	// if(universalBanner.size==="320x50" || universalBanner.size==="970x250"){
+	// 	tl.to(".sky_palm", { opacity:0, duration:.4}, "f2")	
+	// }
+	tl.from(".bg_2", {duration:.1, opacity:0}, "f2")
 	tl.to(".frame1 .dream_big", {duration:.3, opacity:0}, "f2")
 	tl.to([".cloud_palm"], {x:-50, duration:.3, opacity:0}, "f2")
 	tl.from(".logo_max", {opacity:0, duration:.3}, "f2")
@@ -93,20 +96,24 @@ function start(){
 	tl.from(".t1", {x:-50, y:10, opacity:0, duration:.3}, "bar+=.3")
 	tl.from(".date", {y:-20, opacity:0, duration:.3}, "bar+=.3")	
 	tl.from(".tickerMain", {opacity:0, y:"+=60", ease:"back.out", duration:.4}, "bar+=.3")
+	tl.from(".ticker_cloud", {opacity:0, duration:.3}, "bar+=.3")	
+	
 	tl.call(ticker)
 
 	tl.add("f3", "+=3")
 	tl.to(".tickerMain", {opacity:0, duration:.3}, "f3")
 	tl.to(".cloud_gutar", {opacity:0, x:100, duration:.3}, "f3")
+	tl.from(".bg_3", {duration:.1, opacity:0}, "f3")
 	tl.to(".t1", {opacity:0, duration:.3}, "f3")
+	tl.to(".date", {opacity:0, duration:.3}, "f3")
 
 	tl.add("bike", "+=.3")
 	tl.from(".cloud_bike", {x:100, opacity:0, y:60, duration:.5}, "bike")	
 	tl.from(".t2", {opacity:0, x:-50, y:10, duration:.3}, "bike+=.3")
-	
+	tl.to(".date", {opacity:1, duration:.3}, "bike+=.3")
 
 	tl.add("end", "+=2")
-
+	tl.from(".bg_4", {duration:.1, opacity:0}, "end")
 	tl.set(".frame3", {opacity:1}, "end")
 	tl.to(".cloud_bike", {x:-100, opacity:0, y:-60, ease:"back.inOut", duration:.3}, "end")
 	tl.to(".footer-bar", {opacity:0, duration:.3})
@@ -122,6 +129,7 @@ function start(){
 	// tl.play("end")
 
 }
+
 
 
 export { start }

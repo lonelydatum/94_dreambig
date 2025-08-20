@@ -342,15 +342,15 @@ canvas, .text, .frame, .outline, img {
 }
 
 .frame2 .cloud-blenmode {
-  -webkit-transform: translate(35px, 45px) scale(0.55, 0.55);
-  -ms-transform: translate(35px, 45px) scale(0.55, 0.55);
-  transform: translate(35px, 45px) scale(0.55, 0.55);
+  -webkit-transform: translate(80px, 40px) scale(0.43, 0.43);
+  -ms-transform: translate(80px, 40px) scale(0.43, 0.43);
+  transform: translate(80px, 40px) scale(0.43, 0.43);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
   perspective: 1000px;
   position: absolute;
-  opacity: .9;
+  z-index: 12;
 }
 
 .frame3 .cloud-blenmode {

@@ -342,15 +342,15 @@ canvas, .text, .frame, .outline, img {
 }
 
 .frame2 .cloud-blenmode {
-  -webkit-transform: translate(-29px, 272px) scale(0.8, 0.8);
-  -ms-transform: translate(-29px, 272px) scale(0.8, 0.8);
-  transform: translate(-29px, 272px) scale(0.8, 0.8);
+  -webkit-transform: translate(-46px, 275px) scale(1, 1);
+  -ms-transform: translate(-46px, 275px) scale(1, 1);
+  transform: translate(-46px, 275px) scale(1, 1);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
   perspective: 1000px;
   position: absolute;
-  opacity: .9;
+  opacity: 1;
 }
 
 .frame3 .dream_big.cloud-blenmode {
@@ -398,9 +398,9 @@ canvas, .text, .frame, .outline, img {
 }
 
 .tickerMain {
-  -webkit-transform: scale(0.345) translate(-99px, 598px) skew(2deg, -5deg);
-  -ms-transform: scale(0.345) translate(-99px, 598px) skew(2deg, -5deg);
-  transform: scale(0.345) translate(-99px, 598px) skew(2deg, -5deg);
+  -webkit-transform: scale(0.345) translate(-96px, 598px) skew(-1deg, -5deg);
+  -ms-transform: scale(0.345) translate(-96px, 598px) skew(-1deg, -5deg);
+  transform: scale(0.345) translate(-96px, 598px) skew(-1deg, -5deg);
 }
 
 #legalBtn {
