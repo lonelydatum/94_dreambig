@@ -377,9 +377,9 @@ canvas, .text, .frame, .outline, img {
 }
 
 .tickerMain {
-  -webkit-transform: scale(0.33) translate(-19px, 115px) skew(2deg, -6deg);
-  -ms-transform: scale(0.33) translate(-19px, 115px) skew(2deg, -6deg);
-  transform: scale(0.33) translate(-19px, 115px) skew(2deg, -6deg);
+  -webkit-transform: scale(0.33) translate(-14px, 115px) skew(-1deg, -5deg);
+  -ms-transform: scale(0.33) translate(-14px, 115px) skew(-1deg, -5deg);
+  transform: scale(0.33) translate(-14px, 115px) skew(-1deg, -5deg);
 }
 
 /*# sourceMappingURL=main.css.map */
