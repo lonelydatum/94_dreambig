@@ -232,7 +232,7 @@ canvas, .text, .frame, .outline, img {
 }
 
 .footer-bar {
-  z-index: 13;
+  z-index: 12;
 }
 
 .cardWrapper {
@@ -404,7 +404,7 @@ canvas, .text, .frame, .outline, img {
 
 .tickerMain {
   position: relative;
-  z-index: 11;
+  z-index: 20;
   -webkit-transform: scale(0.223) translate(-501px, 40px) skew(-4deg, -4deg);
   -ms-transform: scale(0.223) translate(-501px, 40px) skew(-4deg, -4deg);
   transform: scale(0.223) translate(-501px, 40px) skew(-4deg, -4deg);
@@ -420,6 +420,16 @@ canvas, .text, .frame, .outline, img {
   perspective: 1000px;
   position: absolute;
   width: 60px;
+}
+
+.t1, .t2 {
+  -webkit-transform: scale(0.5) translate(-50%, -50%);
+  -ms-transform: scale(0.5) translate(-50%, -50%);
+  transform: scale(0.5) translate(-50%, -50%);
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  position: absolute;
 }
 
 /*# sourceMappingURL=main.css.map */

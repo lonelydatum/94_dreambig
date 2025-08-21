@@ -232,7 +232,7 @@ canvas, .text, .frame, .outline, img {
 }
 
 .footer-bar {
-  z-index: 13;
+  z-index: 12;
 }
 
 .cardWrapper {

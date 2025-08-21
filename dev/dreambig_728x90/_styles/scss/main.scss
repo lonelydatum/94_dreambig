@@ -49,11 +49,18 @@
 .tickerMain{	
 	position: relative;
 
-	z-index: 11;
+	z-index: 20;
 	transform: scale(0.223) translate(-501px, 40px) skew(-4deg, -4deg);
 }
 
 #legalBtn{	
 	@include pos(670, 0);	
 	width: 60px;
+}
+
+
+.t1, .t2{
+	transform:  scale(.5) translate(-50%, -50%);
+	transform-origin: 50% 50%;
+	position: absolute;
 }
