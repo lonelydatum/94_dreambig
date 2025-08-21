@@ -92,7 +92,7 @@ table {
   opacity: 0;
   width: 36px;
   height: 25px;
-  z-index: 11;
+  z-index: 55;
   background-color: red;
   display: none;
 }
@@ -407,9 +407,9 @@ canvas, .text, .frame, .outline, img {
 }
 
 .tickerMain {
-  -webkit-transform: scale(0.345) translate(-96px, 598px) skew(-1deg, -5deg);
-  -ms-transform: scale(0.345) translate(-96px, 598px) skew(-1deg, -5deg);
-  transform: scale(0.345) translate(-96px, 598px) skew(-1deg, -5deg);
+  -webkit-transform: scale(0.345) translate(-96px, 568px) skew(-1deg, -5deg);
+  -ms-transform: scale(0.345) translate(-96px, 568px) skew(-1deg, -5deg);
+  transform: scale(0.345) translate(-96px, 568px) skew(-1deg, -5deg);
 }
 
 #legalBtn {
