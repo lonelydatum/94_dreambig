@@ -103,6 +103,7 @@ function start(){
 	tl.add("f3", "+=3")
 	tl.to(".tickerMain", {opacity:0, duration:.3}, "f3")
 	tl.to(".cloud_gutar", {opacity:0, x:100, duration:.3}, "f3")
+	tl.to(".ticker_cloud", {opacity:0, duration:.3}, "f3")	
 	tl.from(".bg_3", {duration:.1, opacity:0}, "f3")
 	tl.to(".t1", {opacity:0, duration:.3}, "f3")
 	tl.to(".date", {opacity:0, duration:.3}, "f3")

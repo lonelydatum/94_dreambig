@@ -197,6 +197,14 @@ canvas, .text, .frame, .outline, img {
   image-rendering: -webkit-optimize-contrast;
 }
 
+.ticker_cloud {
+  z-index: 12;
+}
+
+.footer-bar {
+  z-index: 13;
+}
+
 .cardWrapper {
   position: absolute;
   -webkit-font-smoothing: antialiased;
@@ -317,15 +325,7 @@ canvas, .text, .frame, .outline, img {
   position: absolute;
 }
 
-.frame2 .cloud-blenmode {
-  -webkit-transform: translate(40px, 273px) scale(1.2, 1.2);
-  -ms-transform: translate(40px, 273px) scale(1.2, 1.2);
-  transform: translate(40px, 273px) scale(1.2, 1.2);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-perspective: 1000px;
-  perspective: 1000px;
-  position: absolute;
+.frame2 .ticker_cloud {
   opacity: 1;
 }
 
