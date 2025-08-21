@@ -422,14 +422,4 @@ canvas, .text, .frame, .outline, img {
   width: 60px;
 }
 
-.t1, .t2 {
-  -webkit-transform: scale(0.5) translate(-50%, -50%);
-  -ms-transform: scale(0.5) translate(-50%, -50%);
-  transform: scale(0.5) translate(-50%, -50%);
-  -webkit-transform-origin: 50% 50%;
-  -ms-transform-origin: 50% 50%;
-  transform-origin: 50% 50%;
-  position: absolute;
-}
-
 /*# sourceMappingURL=main.css.map */
